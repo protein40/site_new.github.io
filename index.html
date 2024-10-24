@@ -316,31 +316,33 @@
  
 
 
- <!-- ФОРМА ДЛЯ ЗАПОЛНЕНИЯ -->                                     
-<section class="secondary-bg section-padding" style=" margin-bottom: 0;">
-    <div class="container credit__form-wrapper">
-        <div class="credit__form-text" >
-                            <p class="f-22 f-bold">Специалисты ГРИНЛОС помогут выбрать оптимальную модель КНС</p>
-<p class="f-22">Оставьте заявку, и менеджер свяжется с вами в течении 10 минут</p>
-			<div class="green-block" style="max-width: 400px; height: 100px;  display: flex; justify-content: center; align-items: center;">
-				<p class="f-22 f-bold" style="display: inline-block; margin: 0; padding-left: 1.5em;">Москва</p>
-				<a href="tel:+78003503436" class="f-22 f-bold link" style="display: inline-block; margin: 0; padding-left: 1em; padding-right: 1.5em;">+7 (800) 350-34-36</a>
-			</div>
+<!-- ФОРМА ДЛЯ ЗАПОЛНЕНИЯ -->                                     
+<section class="secondary-bg section-padding" style="margin-bottom: 0;">
+    <div class="container credit__form-wrapper" style="display: flex; flex-direction: row; height: 100%; align-items: stretch;">
+        <div class="credit__form-text" style="flex: 1; display: flex; flex-direction: column; justify-content: flex-start;">
+            <p class="f-22 f-bold">Специалисты ГРИНЛОС помогут выбрать оптимальную модель КНС</p>
+            <p class="f-22">Оставьте заявку, и менеджер свяжется с вами в течении 10 минут</p>
+            <div class="green-block" style="display: flex; max-width: 400px; height: 100px; justify-content: center; align-items: center; margin-top: auto;">
+                <p class="f-22 f-bold" style="margin: 0; padding-left: 1.5em;">Москва</p>
+                <a href="tel:+78003503436" class="f-22 f-bold link" style="margin: 0; padding-left: 1em; padding-right: 1.5em;">+7 (800) 350-34-36</a>
+            </div>
         </div>
-        <form method="post" class="form_submit_handler credit__form" action="/send_form/" data-callback="send_order_form" data-after_send="popup">
-            <input type="hidden" value="/greenlos-kns/" name="page_url">
-            <input type="hidden" value="Помощь в выборе модели" name="form_name">
-            <input type="hidden" value="credit" name="ident">
-            <input class="form__input" type="text" name="name" placeholder="Имя">
-            <input class="form__input" type="text" name="phone" placeholder="Номер телефона" required="required">
-            <label>
-				<input type="checkbox" name="no_robot" value="1" class="radio-simple__radio s-n-b" required="">
-				<span class="radio-simple__text radio-simple__text_mod">Даю согласие на обработку персональных данных</span>
-			</label>
-            <div class="f-center">
-                                    <input value="Отправить заявку" type="submit" class="button button-full h-mt10">
-                            </div>
-        </form>
+        <div style="display: flex; flex-direction: column; justify-content: flex-end; height: 100%; margin-left: auto;">
+            <form method="post" class="form_submit_handler credit__form" action="/send_form/" data-callback="send_order_form" data-after_send="popup" style="display: flex; flex-direction: column; align-items: flex-end; height: 100%;">
+                <input type="hidden" value="/greenlos-kns/" name="page_url">
+                <input type="hidden" value="Помощь в выборе модели" name="form_name">
+                <input type="hidden" value="credit" name="ident">
+                <input class="form__input" type="text" name="name" placeholder="Имя" style="margin-bottom: 0.5em; width: 100%;">
+                <input class="form__input" type="text" name="phone" placeholder="Номер телефона" required="required" style="margin-bottom: 0.5em; width: 100%;">
+                <label style="display: flex; align-items: center; margin-bottom: 0.5em;">
+                    <input type="checkbox" name="no_robot" value="1" class="radio-simple__radio s-n-b" required="" style="margin-right: 0.5em;">
+                    <span class="radio-simple__text radio-simple__text_mod">Даю согласие на обработку персональных данных</span>
+                </label>
+                <div class="f-center" style="width: 100%; margin-top: auto;">
+                    <input value="Отправить заявку" type="submit" class="button button-full" style="width: 100%;">
+                </div>
+            </form>
+        </div>
     </div>
 </section>
 
